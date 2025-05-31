@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.API", "Lanche.API\Lanche.API.csproj", "{926F15BF-D05E-4172-A325-15924CFFEE30}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7925EAD-F6DA-4A3F-B282-2243812116EF} = {C7925EAD-F6DA-4A3F-B282-2243812116EF}
+		{EC776527-837F-4ADB-AE16-8A6E8D47D094} = {EC776527-837F-4ADB-AE16-8A6E8D47D094}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Domain", "Lanche.Domain\Lanche.Domain.csproj", "{EC776527-837F-4ADB-AE16-8A6E8D47D094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Application", "Lanche.Application\Lanche.Application.csproj", "{C7925EAD-F6DA-4A3F-B282-2243812116EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Infrastructure", "Lanche.Infrastructure\Lanche.Infrastructure.csproj", "{5EB9306F-2BC3-47AF-992D-2C9E0506AFA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Tests", "Lanche.Tests\Lanche.Tests.csproj", "{44170562-EBC0-46FE-8642-C64D4540745E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{926F15BF-D05E-4172-A325-15924CFFEE30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926F15BF-D05E-4172-A325-15924CFFEE30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926F15BF-D05E-4172-A325-15924CFFEE30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926F15BF-D05E-4172-A325-15924CFFEE30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC776527-837F-4ADB-AE16-8A6E8D47D094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC776527-837F-4ADB-AE16-8A6E8D47D094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC776527-837F-4ADB-AE16-8A6E8D47D094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC776527-837F-4ADB-AE16-8A6E8D47D094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7925EAD-F6DA-4A3F-B282-2243812116EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7925EAD-F6DA-4A3F-B282-2243812116EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7925EAD-F6DA-4A3F-B282-2243812116EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7925EAD-F6DA-4A3F-B282-2243812116EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB9306F-2BC3-47AF-992D-2C9E0506AFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB9306F-2BC3-47AF-992D-2C9E0506AFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB9306F-2BC3-47AF-992D-2C9E0506AFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB9306F-2BC3-47AF-992D-2C9E0506AFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44170562-EBC0-46FE-8642-C64D4540745E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44170562-EBC0-46FE-8642-C64D4540745E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44170562-EBC0-46FE-8642-C64D4540745E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44170562-EBC0-46FE-8642-C64D4540745E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49ACD77C-E916-44CF-A79D-D69AA7A107C0}
+	EndGlobalSection
+EndGlobal
