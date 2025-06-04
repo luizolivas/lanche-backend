@@ -1,4 +1,5 @@
 ﻿using Lanche.Application.Cliente.Services.Interfaces;
+using Lanche.Application.DTOs.Cliente;
 using Lanche.Domain.Shared.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,9 +11,12 @@ namespace Lanche.Application.Cliente.Services
 {
     internal class OrderService : IOrderService
     {
-        public Task CreateOrderAsync(Order dto)
+        public Task CreateOrderAsync(CreateOrderDto dto)
         {
-            throw new NotImplementedException();
+            Order order = new Order 
+            {
+                
+            };
         }
     }
 }
