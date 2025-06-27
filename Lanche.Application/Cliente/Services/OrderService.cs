@@ -17,6 +17,8 @@ namespace Lanche.Application.Cliente.Services
             {
                 
             };
+
+            return Task.CompletedTask;
         }
     }
 }

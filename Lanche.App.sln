@@ -9,13 +9,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.API", "Lanche.API\La
 		{EC776527-837F-4ADB-AE16-8A6E8D47D094} = {EC776527-837F-4ADB-AE16-8A6E8D47D094}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Domain", "Lanche.Domain\Lanche.Domain.csproj", "{EC776527-837F-4ADB-AE16-8A6E8D47D094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.Domain", "Lanche.Domain\Lanche.Domain.csproj", "{EC776527-837F-4ADB-AE16-8A6E8D47D094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Application", "Lanche.Application\Lanche.Application.csproj", "{C7925EAD-F6DA-4A3F-B282-2243812116EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.Application", "Lanche.Application\Lanche.Application.csproj", "{C7925EAD-F6DA-4A3F-B282-2243812116EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Infrastructure", "Lanche.Infrastructure\Lanche.Infrastructure.csproj", "{5EB9306F-2BC3-47AF-992D-2C9E0506AFA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.Infrastructure", "Lanche.Infrastructure\Lanche.Infrastructure.csproj", "{5EB9306F-2BC3-47AF-992D-2C9E0506AFA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanche.Tests", "Lanche.Tests\Lanche.Tests.csproj", "{44170562-EBC0-46FE-8642-C64D4540745E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.Tests", "Lanche.Tests\Lanche.Tests.csproj", "{44170562-EBC0-46FE-8642-C64D4540745E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{42D63A1D-F111-466E-B1D7-01BDE937D303}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

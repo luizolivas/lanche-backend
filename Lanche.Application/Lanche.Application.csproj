@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Admin\Services\" />
+    <ProjectReference Include="..\Lanche.Domain\Lanche.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lanche.Domain\Lanche.Domain.csproj" />
+    <Folder Include="DTOs\Shared\services\interfaces\" />
   </ItemGroup>
 
 </Project>
