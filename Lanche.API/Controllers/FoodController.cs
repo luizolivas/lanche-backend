@@ -1,6 +1,6 @@
-﻿using Lanche.Application.Admin.Interfaces;
-using Lanche.Application.DTOs.Admin;
-using Lanche.Application.DTOs.Food;
+﻿using Lanche.Application.DTOs.Admin;
+using Lanche.Application.DTOs.Shared.DTOs;
+using Lanche.Application.DTOs.Shared.services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,7 +35,7 @@ namespace Lanche.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, FoodDTO dto)
+        public async Task<IActionResult> Update(int id, FoodDto dto)
         {
             if (id != dto.Id) return BadRequest();
             await _service.UpdateAsync(dto);

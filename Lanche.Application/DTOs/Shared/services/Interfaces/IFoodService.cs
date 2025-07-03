@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lanche.Application.Admin.Interfaces
+namespace Lanche.Application.DTOs.Shared.services.Interfaces
 {
     public interface IFoodService
     {
