@@ -17,5 +17,7 @@ namespace Lanche.Domain.Shared.Entities
 
         public int CategoryId { get; set; }
         public Category Category { get; set; }
+
+        public ICollection<CustomizationOption> CustomizationOptions { get; set; } = new List<CustomizationOption>();
     }
 }

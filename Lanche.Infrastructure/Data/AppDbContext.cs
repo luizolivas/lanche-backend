@@ -16,9 +16,17 @@ namespace Lanche.Infrastructure.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<Food> Foods { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<CustomizationOption> CustomizationOptions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Configuração para o relacionamento muitos para muitos entre Food e CustomizationOption
+            // O EF Core infere isso, mas explicitá-lo pode ser útil.
+            modelBuilder.Entity<Food>()
+                .HasMany(f => f.CustomizationOptions) // Um Food tem muitas CustomizationOptions
+                .WithMany(co => co.Products);     // E uma CustomizationOption está em muitos Products (Foods)
+
+
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Nome = "Lanches pequenos" },
                 new Category { Id = 2, Nome = "Lanches menores" },
@@ -29,6 +37,12 @@ namespace Lanche.Infrastructure.Data
                 new Category { Id = 7, Nome = "Porções" },
                 new Category { Id = 8, Nome = "Sobremesas" },
                 new Category { Id = 9, Nome = "Bebidas" }
+            );
+
+            modelBuilder.Entity<CustomizationOption>().HasData(
+                new CustomizationOption { Id = 1, Name = "Cheddar", Price = 4 },
+                new CustomizationOption { Id = 2, Name = "Fatia de Presunto", Price = 2.5m },
+                new CustomizationOption { Id = 3, Name = "Barbecue", Price = 5 }
             );
 
             modelBuilder.Entity<Food>().HasData(

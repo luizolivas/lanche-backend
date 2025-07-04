@@ -14,5 +14,7 @@ namespace Lanche.Domain.Interfaces
         Task AddAsync(Food food);
         Task UpdateAsync(Food food);
         Task DeleteAsync(int id);
+        Task<Food> GetFoodWithCustomizationsAsync(int id);
+        Task AddCustomizationToFood(int foodId, int customizationId);
     }
 }
