@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lanche.Application.DTOs.Admin
+namespace Lanche.Application.DTOs
 {
     public class CreateFoodDTO
     {
@@ -12,6 +12,8 @@ namespace Lanche.Application.DTOs.Admin
         public string Description { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public string ImageUrl { get; set; } = string.Empty;
+        public bool IsActive { get; set; }
+
     }
 
 }

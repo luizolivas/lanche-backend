@@ -17,14 +17,27 @@ namespace Lanche.Infrastructure.Data
         public DbSet<Food> Foods { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<CustomizationOption> CustomizationOptions { get; set; }
+        public DbSet<FoodCustomizationOption> FoodCustomizationOptions { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configuração para o relacionamento muitos para muitos entre Food e CustomizationOption
+            // Configuração para o relacionamento muitos para muitos entr
+            // e Food e CustomizationOption
             // O EF Core infere isso, mas explicitá-lo pode ser útil.
-            modelBuilder.Entity<Food>()
-                .HasMany(f => f.CustomizationOptions) // Um Food tem muitas CustomizationOptions
-                .WithMany(co => co.Products);     // E uma CustomizationOption está em muitos Products (Foods)
+
+            modelBuilder.Entity<FoodCustomizationOption>()
+    .HasKey(fco => new { fco.FoodId, fco.CustomizationOptionId });
+
+            modelBuilder.Entity<FoodCustomizationOption>()
+                .HasOne(fco => fco.Food)
+                .WithMany(f => f.FoodCustomizationOptions)
+                .HasForeignKey(fco => fco.FoodId);
+
+            modelBuilder.Entity<FoodCustomizationOption>()
+                .HasOne(fco => fco.CustomizationOption)
+                .WithMany(c => c.FoodCustomizationOptions)
+                .HasForeignKey(fco => fco.CustomizationOptionId);
 
 
             modelBuilder.Entity<Category>().HasData(

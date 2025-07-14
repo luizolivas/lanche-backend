@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lanche.Application.Cliente.Services.Interfaces
+namespace Lanche.Application.Interfaces
 {
     internal interface IOrderService
     {

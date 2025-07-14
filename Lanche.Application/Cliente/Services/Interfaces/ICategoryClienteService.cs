@@ -1,4 +1,4 @@
-﻿using Lanche.Application.DTOs.Cliente;
+﻿using Lanche.Application.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +9,6 @@ namespace Lanche.Application.Cliente.Services.Interfaces
 {
     public interface ICategoryClientService
     {
-        Task<List<CategoryClientDTO>> GetAllAsync();
+        Task<List<CategoryDto>> GetAllAsync();
     }
 }

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lanche.API.Controllers.Cliente
+namespace Lanche.Client.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

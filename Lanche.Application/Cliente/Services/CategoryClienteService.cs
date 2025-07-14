@@ -1,5 +1,5 @@
 ﻿using Lanche.Application.Cliente.Services.Interfaces;
-using Lanche.Application.DTOs.Cliente;
+using Lanche.Application.DTOs;
 using Lanche.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -18,12 +18,12 @@ namespace Lanche.Application.Cliente.Services
             _repository = repository;
         }
 
-        public async Task<List<CategoryClientDTO>> GetAllAsync()
+        public async Task<List<CategoryDto>> GetAllAsync()
         {
             var categories = await _repository.GetAllAsync();
-            return categories.Select(c => new CategoryClientDTO {
+            return categories.Select(c => new CategoryDto {
                 Id = c.Id,
-                Nome = c.Nome,
+                nome = c.Nome,
             }).ToList();
         }
     }

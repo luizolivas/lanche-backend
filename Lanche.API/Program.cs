@@ -1,7 +1,7 @@
 using Lanche.Application.Cliente.Services;
 using Lanche.Application.Cliente.Services.Interfaces;
-using Lanche.Application.DTOs.Shared.services;
-using Lanche.Application.DTOs.Shared.services.Interfaces;
+using Lanche.Application.Interfaces;
+using Lanche.Application.Services;
 using Lanche.Domain.Interfaces;
 using Lanche.Infrastructure.Data;
 using Lanche.Infrastructure.Repositories;

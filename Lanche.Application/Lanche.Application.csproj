@@ -10,4 +10,9 @@
     <ProjectReference Include="..\Lanche.Domain\Lanche.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Admin\Interfaces\" />
+    <Folder Include="Admin\Services\" />
+  </ItemGroup>
+
 </Project>

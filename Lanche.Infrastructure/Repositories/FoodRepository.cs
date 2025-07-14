@@ -49,14 +49,14 @@ namespace Lanche.Infrastructure.Repositories
         public async Task<Food> GetFoodWithCustomizationsAsync(int id)
         {
             return await _context.Foods
-                                 .Include(f => f.CustomizationOptions)
+                                 .Include(f => f.FoodCustomizationOptions)
                                  .FirstOrDefaultAsync(f => f.Id == id);
         }
 
         public async Task AddCustomizationToFood(int foodId, int customizationId)
         {
             var food = await _context.Foods
-                                 .Include(f => f.CustomizationOptions)
+                                 .Include(f => f.FoodCustomizationOptions)
                                  .FirstOrDefaultAsync(f => f.Id == foodId);
 
             var customizationOption = await _context.CustomizationOptions
@@ -66,10 +66,18 @@ namespace Lanche.Infrastructure.Repositories
             {
                 // Adiciona a opção à coleção do Food.
                 // O EF Core vai criar uma nova entrada na tabela de junção.
-                food.CustomizationOptions.Add(customizationOption);
+                food.FoodCustomizationOptions.Add(new FoodCustomizationOption {
+                    FoodId = foodId,
+                    CustomizationOptionId = customizationId
+                });
                 await _context.SaveChangesAsync();
                 Console.WriteLine($"Opção '{customizationOption.Name}' adicionada ao '{food.Name}'.");
             }
+        }
+
+        public async Task<IEnumerable<Food>> GetActiveAsync()
+        {
+            return await _context.Foods.Where(f => f.IsActive).ToListAsync();
         }
     }
 

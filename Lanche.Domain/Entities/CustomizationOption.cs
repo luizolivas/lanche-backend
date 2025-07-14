@@ -7,8 +7,9 @@ namespace Lanche.Domain.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
+        public bool IsActive { get; set; }
 
 
-        public ICollection<Food> Products { get; set; } = new List<Food>();
+        public ICollection<FoodCustomizationOption> FoodCustomizationOptions { get; set; } = new List<FoodCustomizationOption>();
     }
 }

@@ -3,7 +3,7 @@ using Lanche.Application.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Lanche.API.Controllers
+namespace Lanche.Admin.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

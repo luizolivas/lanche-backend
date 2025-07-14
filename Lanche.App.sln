@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.API", "Lanche.API\Lanche.API.csproj", "{926F15BF-D05E-4172-A325-15924CFFEE30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.Cliente.API", "Lanche.API\Lanche.Cliente.API.csproj", "{926F15BF-D05E-4172-A325-15924CFFEE30}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C7925EAD-F6DA-4A3F-B282-2243812116EF} = {C7925EAD-F6DA-4A3F-B282-2243812116EF}
 		{EC776527-837F-4ADB-AE16-8A6E8D47D094} = {EC776527-837F-4ADB-AE16-8A6E8D47D094}
@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanche.Admin.API", "Lanche.Admin.API\Lanche.Admin.API.csproj", "{B38F641F-5468-4ED6-8BA3-324BF90D4942}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +50,10 @@ Global
 		{44170562-EBC0-46FE-8642-C64D4540745E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44170562-EBC0-46FE-8642-C64D4540745E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44170562-EBC0-46FE-8642-C64D4540745E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38F641F-5468-4ED6-8BA3-324BF90D4942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38F641F-5468-4ED6-8BA3-324BF90D4942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38F641F-5468-4ED6-8BA3-324BF90D4942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38F641F-5468-4ED6-8BA3-324BF90D4942}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
