@@ -12,6 +12,7 @@ namespace Lanche.Domain.Entities
         public int Id { get; set; }
         public string Nome { get; set; } = string.Empty;
 
+
         public ICollection<Food> Products { get; set; } = new List<Food>();
     }
 }
